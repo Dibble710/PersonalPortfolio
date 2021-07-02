@@ -190,7 +190,7 @@ section .title::after {
 .home .home-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
-  color:rgb(5, 0, 0);
+  color: #111;
 }
 .home .home-content .text-3 span {
   color: crimson;
@@ -393,7 +393,10 @@ blockquote p {
   width: 70%;
 }
 .skills-content .right .cSharp::before {
-  width: 50%;
+  width: 60%;
+}
+.skills-content .right .python::before {
+  width: 40%;
 }
 .skills-content .right .mysql::before {
   width: 70%;
