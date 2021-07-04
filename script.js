@@ -45,10 +45,10 @@ $(document).ready(function () {
   });
   var typed = new Typed(".typing-2", {
     strings: [
-      "FreeLancer",
-      "Developer",
-      "Video Game Enthusiast",
-      "Discord Bot Developer",
+      "Music",
+      "Computers",
+      "Video Games",
+      "Coding!",
     ],
     typeSpeed: 100,
     backSpeed: 60,
