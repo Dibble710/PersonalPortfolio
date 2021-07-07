@@ -40,7 +40,7 @@ $(document).ready(function () {
       "Bot Developer",
     ],
     typeSpeed: 100,
-    backSpeed: 60,
+    backSpeed: 50,
     loop: true,
   });
   var typed = new Typed(".typing-2", {
@@ -51,7 +51,7 @@ $(document).ready(function () {
       "Coding!",
     ],
     typeSpeed: 100,
-    backSpeed: 60,
+    backSpeed: 50,
     loop: true,
   });
 });
