@@ -78,6 +78,10 @@ section .title::after {
   transform: translateX(-50%);
 }
 /* navbar styling */
+.code {
+  color: crimson;
+  
+}
 .navbar {
   position: fixed;
   width: 100%;
@@ -101,11 +105,14 @@ section .title::after {
   font-weight: 600;
 }
 .navbar .logo a span {
-  color: crimson;
+
   transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span {
   color: #fff;
+}
+.navbar.sticky .code  {
+  color: #111;
 }
 .navbar .menu li {
   list-style: none;
@@ -280,7 +287,7 @@ section .title::after {
 .services .title::after,
 .teams .title::after {
   background: #111;
-  content: "My Personal Projects";
+  content: "work so far";
 }
 .services .serv-content .card {
   width: calc(33% - 20px);
@@ -436,7 +443,7 @@ blockquote p {
 
 /* Contact Section Styling */
 .contact .title::after {
-  content: "let's work together";
+  content: "let's talk";
 }
 .contact .contact-content .column {
   width: calc(50% - 30px);
