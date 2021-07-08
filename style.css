@@ -9,7 +9,7 @@
 html {
   scroll-behavior: smooth;
 }
-/* custom scroll bar */
+/* Custom ScrollBbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -17,21 +17,12 @@ html {
   background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: crimson;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: rgba(17, 17, 17, 0.664);
 }
-/* all similar content styling codes */
-.thumbnail:hover {
-  position: relative;
-  top: -25px;
-  left: -35px;
-  width: 500px;
-  height: auto;
-  display: block;
-  z-index: 999;
-}
+/* Similar Content Styling Codes */
 section {
   padding: 100px 0;
 }
@@ -173,6 +164,28 @@ section .title::after {
 .scroll-up-btn:hover {
   filter: brightness(90%);
 }
+
+.bounce {
+  animation: bounce 2s;
+  animation-delay: 3s;
+  animation-iteration-count: 2;
+}
+
+@keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-12px);
+  }
+}
 /* home section styling */
 .home {
   display: flex;
@@ -309,6 +322,7 @@ section .title::after {
 .services .serv-content .card:hover {
   background: crimson;
   transform: scale(1.1);
+  transition-duration: 0.7s;
 }
 .services .serv-content .card .box {
   transition: all 0.3s ease;
@@ -335,7 +349,7 @@ section .title::after {
 }
 /* skills section styling */
 
-blockquote {
+.blockquote {
   background: #f9f9f9;
   border-left: 10px solid rgba(220, 20, 60, 0.747);
   margin: 1.5em 10px;
@@ -348,6 +362,14 @@ blockquote:before {
   font-size: 4em;
   line-height: 0.1em;
   margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote::after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.25em;
   vertical-align: -0.4em;
 }
 
@@ -452,18 +474,29 @@ blockquote p {
   color: #2965f1;
 }
 .bootstrap-icon {
-  color: #602C50;
+  color: #602c50;
 }
 .javascript-icon {
-  color: #F0DB4F;
+  color: #f0db4f;
 }
 
 /* End Skill Section */
 
 /* Contact Section Styling */
-.contact .title::after {
-  content: "let's talk";
+.contact {
+  background-color: #111;
+  color: #fff;
 }
+.contact .title::before,
+.teams .title::before {
+  background: #fff;
+}
+.contact .title::after,
+.teams .title::after {
+  background: #111;
+  content: "let's work";
+}
+
 .contact .contact-content .column {
   width: calc(50% - 30px);
 }
@@ -478,6 +511,12 @@ blockquote p {
 .contact .contact-content .left .icons {
   margin: 10px 0;
 }
+
+.contact .contact-content .left .icons i:hover {
+  transform: scale(1.4);
+  transition-duration: 1s;
+}
+
 .contact .contact-content .row {
   display: flex;
   height: 65px;
@@ -492,9 +531,10 @@ blockquote p {
 }
 .contact .contact-content .info .head {
   font-weight: 500;
+  color: crimson;
 }
 .contact .contact-content .info .sub-title {
-  color: #333;
+  color: #fff;
 }
 .contact .right form .fields {
   display: flex;
@@ -557,17 +597,18 @@ blockquote p {
 }
 .sub-title a {
   text-decoration: none;
-  color: #222;
+  color: #fff;
 }
 .sub-title :hover {
-  color: crimson !important;
+  color: crimson;
 }
 /* footer section styling */
 footer {
-  background: #111;
+  background: #fff;
   padding: 15px 23px;
-  color: #fff;
+  color: #111;
   text-align: center;
+  border-bottom: solid #111;
 }
 footer span a {
   color: crimson;
@@ -577,7 +618,7 @@ footer span a:hover {
   text-decoration: underline;
 }
 .footer-name {
-  color:crimson;
+  color: crimson;
 }
 /* responsive media query start */
 @media (max-width: 1104px) {
