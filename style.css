@@ -23,6 +23,15 @@ html {
   background: #555;
 }
 /* all similar content styling codes */
+.thumbnail:hover {
+  position: relative;
+  top: -25px;
+  left: -35px;
+  width: 500px;
+  height: auto;
+  display: block;
+  z-index: 999;
+}
 section {
   padding: 100px 0;
 }
@@ -80,7 +89,6 @@ section .title::after {
 /* navbar styling */
 .code {
   color: crimson;
-  
 }
 .navbar {
   position: fixed;
@@ -105,13 +113,12 @@ section .title::after {
   font-weight: 600;
 }
 .navbar .logo a span {
-
   transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span {
   color: #fff;
 }
-.navbar.sticky .code  {
+.navbar.sticky .code {
   color: #111;
 }
 .navbar .menu li {
@@ -130,7 +137,7 @@ section .title::after {
   color: crimson;
 }
 .navbar.sticky .menu li a:hover {
-  color: #fff;
+  color: #111;
 }
 /* menu btn styling */
 .menu-btn {
@@ -238,7 +245,8 @@ section .title::after {
   height: 400px;
   width: 400px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 10%;
+  box-shadow: 5px 5px 5px grey;
 }
 .about .about-content .right {
   width: 55%;
@@ -300,6 +308,7 @@ section .title::after {
 }
 .services .serv-content .card:hover {
   background: crimson;
+  transform: scale(1.1);
 }
 .services .serv-content .card .box {
   transition: all 0.3s ease;
@@ -314,6 +323,10 @@ section .title::after {
 }
 .services .serv-content .card:hover i {
   color: #fff;
+}
+
+.services .serv-content .card:hover .text {
+  color: #111;
 }
 .services .serv-content .card .text {
   font-size: 25px;
@@ -409,7 +422,7 @@ blockquote p {
   width: 70%;
 }
 .skills-content .right .cSharp::before {
-  width: 60%;
+  width: 70%;
 }
 .skills-content .right .python::before {
   width: 40%;
@@ -437,6 +450,12 @@ blockquote p {
 }
 .css-icon {
   color: #2965f1;
+}
+.bootstrap-icon {
+  color: #602C50;
+}
+.javascript-icon {
+  color: #F0DB4F;
 }
 
 /* End Skill Section */
@@ -556,6 +575,9 @@ footer span a {
 }
 footer span a:hover {
   text-decoration: underline;
+}
+.footer-name {
+  color:crimson;
 }
 /* responsive media query start */
 @media (max-width: 1104px) {
