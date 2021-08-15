@@ -717,6 +717,7 @@ footer span a:hover {
   }
 }
 @media (max-width: 500px) {
+
   .home .home-content .text-2 {
     font-size: 50px;
   }
@@ -744,5 +745,18 @@ footer span a:hover {
     width: 35px;
     font-size: 23px;
     line-height: 38px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .home {
+    background-image: linear-gradient(
+      115deg,
+      rgba(34, 19, 22, 0.534),
+      rgba(0, 0, 0, 0.534)
+    ),
+    url(images/mobile-banner.jpg);
+  }.text-1, .text-3 {
+    color: white !important;
   }
 }
