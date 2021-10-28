@@ -512,7 +512,7 @@ blockquote p {
 }
 
 .skills-content .right .css::before {
-  width: 70%;
+  width: 90%;
 }
 
 .skills-content .right .js::before {
@@ -532,7 +532,7 @@ blockquote p {
 }
 
 .skills-content .right .mysql::before {
-  width: 70%;
+  width: 90%;
 }
 
 /* Icon Styling */
