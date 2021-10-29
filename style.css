@@ -127,6 +127,10 @@ section .title::after {
 }
 
 .navbar.sticky .logo a span {
+  color: #f1f1f1;
+}
+
+.navbar.sticky .logo a {
   color: #111;
 }
 
@@ -201,7 +205,6 @@ section .title::after {
 }
 
 @keyframes bounce {
-
   0%,
   25%,
   50%,
@@ -222,9 +225,11 @@ section .title::after {
 /* home section styling */
 .home {
   display: flex;
-  background-image: linear-gradient(115deg,
+  background-image: linear-gradient(
+      115deg,
       rgba(34, 19, 22, 0.534),
-      rgba(0, 0, 0, 0.534)),
+      rgba(0, 0, 0, 0.534)
+    ),
     url(images/macbook-bg.jpg);
 
   background-repeat: no-repeat;
@@ -538,7 +543,8 @@ blockquote p {
 /* Icon Styling */
 
 #icon-code {
-  font-size: 36px;
+  font-size: 32px;
+  margin-right: 7px;
 }
 
 .python-icon {
@@ -551,6 +557,10 @@ blockquote p {
 
 .node-icon {
   color: #68a063;
+}
+
+.npm-icon {
+  color: #cc3534;
 }
 
 .html-icon {
@@ -570,7 +580,7 @@ blockquote p {
 }
 
 .vue-icon {
-  color: #42b883
+  color: #42b883;
 }
 
 /* End Skill Section */
@@ -612,7 +622,7 @@ blockquote p {
 
 .contact .contact-content .left .icons i:hover {
   transform: scale(1.2);
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 .contact .contact-content .row {
@@ -855,7 +865,6 @@ footer span a:hover {
 }
 
 @media (max-width: 500px) {
-
   .home .home-content .text-2 {
     font-size: 50px;
   }
@@ -892,8 +901,7 @@ footer span a:hover {
   }
 }
 
-@media screen and (max-width:450px) {
-
+@media screen and (max-width: 450px) {
   .text-1,
   .text-3 {
     color: white !important;
