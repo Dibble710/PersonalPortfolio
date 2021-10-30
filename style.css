@@ -91,6 +91,16 @@ section .title::after {
   transform: translateX(-50%);
 }
 
+.menu-btn:hover .code {
+  color: #f1f1f1;
+  transition: all 0.5s ease;
+}
+
+.navbar.sticky .menu-btn:hover .code {
+  color: #f1f1f1;
+  transition: all 0.5s ease;
+}
+
 /* navbar styling */
 .code {
   color: crimson;
@@ -589,6 +599,10 @@ blockquote p {
 .contact {
   background-color: #111;
   color: #fff;
+}
+
+#contact-me:hover {
+    opacity: .6;
 }
 
 .contact .title::before,
