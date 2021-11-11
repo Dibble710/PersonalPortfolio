@@ -14,6 +14,7 @@ $(document).ready(function () {
       $(".scroll-up-btn").removeClass("show");
     }
   });
+
   // slide-up script
   $(".scroll-up-btn").click(function () {
     $("html").animate({ scrollTop: 0 });
@@ -51,15 +52,27 @@ $(document).ready(function () {
   });
 });
 
+// scroll effects config
 ScrollReveal({
   reset: true,
-  distance: "90px",
+  distance: "100px",
   duration: 1500,
   delay: 100,
 });
 
-ScrollReveal().reveal('.pfp, .skills-content, .contact-text, .home-content', { delay: 200, origin: 'left' });
-ScrollReveal().reveal('.serv-content .card, .message-form, .about-text', { delay: 200, origin: 'bottom' });
-ScrollReveal().reveal('.bars', { delay: 200, origin: 'right' });
-ScrollReveal().reveal('.title', { delay: 200, origin: 'top' });
-ScrollReveal().reveal('#icon-code', { delay: 200, origin: 'left', interval: 200 });
+// scroll effects locations
+ScrollReveal().reveal(".pfp, .skills-content, .contact-text, .home-content", {
+  delay: 200,
+  origin: "left",
+});
+ScrollReveal().reveal(".serv-content .card, .message-form, .about-text", {
+  delay: 200,
+  origin: "bottom",
+});
+ScrollReveal().reveal(".bars, .line", { delay: 200, origin: "right" });
+ScrollReveal().reveal(".title", { delay: 200, origin: "top" });
+ScrollReveal().reveal("#icon-code", {
+  delay: 200,
+  origin: "left",
+  interval: 200,
+});
